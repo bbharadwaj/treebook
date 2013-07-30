@@ -15,11 +15,3 @@ body{
 	padding-top: 50px;
 }
 
-.status {
-	border-bottom: solid 1px #CCC;
-	padding: 5px 0;
-}
-
-.status p {
-	margin: 4px 0;
-}
