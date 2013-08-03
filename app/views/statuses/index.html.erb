@@ -6,22 +6,21 @@
   <%= link_to "Post a new status", new_status_path, class: "btn btn-success" %>
 </div>
 
-
 <% @statuses.each do |status|%>
-  <div class = "status">
-    <strong><%= status.name %></strong>
-    <p><%= status.content %></p>
 
-    <div class = "meta">
-      <%= link_to time_ago_in_words(status.created_at) + " ago", status %>
+<div class = "status">
+  <p><strong><%= status.user.first_name %></strong></p>
+  <p><%= status.content %></p>
 
-      <span class = "admin">
-        | <%= link_to "Edit", edit_status_path(status) %>
-        | <%= link_to "Delete", status, method: :delete, data:{confirm: "Are you sure?"} %>
-      </span>
 
-    </div>
-  </div>
+<div class = "meta">
+  <%= link_to time_ago_in_words(status.created_at) + " ago", status %>
+
+  <span class = "admin">
+    | <%= link_to "Edit", edit_status_path(status) %>
+    | <%= link_to "Delete", status, method: :delete, data:{confirm: "Are you sure?"} %>
+  </span>
+
+</div>
+</div>
 <% end %>
-
-
