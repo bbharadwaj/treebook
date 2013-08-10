@@ -37,10 +37,7 @@ class UserTest < ActiveSupport::TestCase
 	test "a user can have a correctly formatted profile name" do
 		user = User.new(first_name:"Brijesh", last_name:"Bharadwaj", email:"brijesh2@gmail.com")
 		user.password = user.password_confirmation ="asdfasdf"
-
-		user.profile_name ="brijesh_1"
-
+		user.profile_name ="brijesh1"
 		assert user.valid?
-	
 	end
 end
