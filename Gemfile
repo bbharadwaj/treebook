@@ -8,6 +8,10 @@ group :development, :test do
 	gem 'sqlite3'
 end
 
+group :production do 
+	gem 'pg'
+end
+
 gem 'devise'
 gem "simple_form", "~> 3.0.0.rc"
 
