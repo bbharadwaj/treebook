@@ -1,0 +1,13 @@
+Run options: --seed 11234
+
+# Running tests:
+
+F.....
+
+Finished tests in 0.406250s, 14.7692 tests/s, 29.5385 assertions/s.
+
+  1) Failure:
+UserTest#test_a_user_can_have_a_correctly_formatted_profile_name [test/models/user_test.rb:43]:
+Failed assertion, no message given.
+
+6 tests, 12 assertions, 1 failures, 0 errors, 0 skips
