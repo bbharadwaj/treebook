@@ -4,12 +4,14 @@ brijesh:
   email: "brijesh.v.bharadwaj@gmail.com"
   profile_name: "brijesh"
 
-
-
 neha:
   first_name: "Neha"
   last_name: "Kumari"
   email: "neha@nilenso.com"
   profile_name: "neha"
 
-
+nam:
+  first_name: "Nam"
+  last_name: "Rao"
+  email: "nam@gmail.com"
+  profile_name: "nam"
